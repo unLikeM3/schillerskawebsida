@@ -1,0 +1,27 @@
+.centrera{
+	text-align: center;
+}
+.padded{
+	padding: 5px;
+}
+.bright{
+	background-color: #aaa;
+	color:#000;
+	border-radius: 5px;
+}
+.mh40{
+	max-height: 40px;
+}
+.h400{
+	height:400px;
+}
+.mt45{
+	margin-top: 45px;
+}
+.logga{
+	margin-top: -4px;
+}
+.postcontainer{
+	border-radius: 5px;
+	background-color: #eee;
+}
