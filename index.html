@@ -30,25 +30,34 @@
 		<div class="row">
 			<div class="span12 mt45 h400">
 				<div id="slider">
-				<div class="centrera">
 					<script type="text/javascript">
-					$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",{tags: "engine",tagmode: "any", format: "json" },
+						$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",{tags: "engine",tagmode: "any", format: "json" },
 						function(data) {
 							$.each(data.items, function(i,item){
-								$("<img/>").attr({src : item.media.m.replace('_m.','.')}).appendTo("#slider");
-						        if ( i == 15 ) {
-						            $('#slider').coinslider({ width:1100, height:370, hoverPause: true });
-						            return false;
-						    	}
+								console.log(data);
+							    $("<img/>").attr({src : item.media.m.replace('_m.','.')}).appendTo("#slider");
+							    if ( i == (data.items.length - 1) ) {
+							        $('#slider').coinslider({ width: $(window).width(), height: 370, hoverPause: true });
+							        return false;
+							    }
 							});
 						});
 					</script>
-				</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="span8">
+				<div class="postcontainer padded">
+					<h1>Ever since</h1>
+					<p>I was eight or nine <br>
+						I've been standing on the shoreline <br> 
+						for all my life I've been waiting <br>
+						for something lasting <br>
+						you loose your hunger and you loose your way<br> 
+						you get confused and then you fade away<br>
+						Author - <a href="#">Broder Daniel</a> 13:37 13/04/20 </p>
+				</div>
 				<div class="postcontainer padded">
 					<h1>Ever since</h1>
 					<p>I was eight or nine <br>
@@ -65,13 +74,17 @@
 					Sidebar
 				</div>
 			</div>
+			<div class="mb45"></div>
+		</div>
+		<div class="row">
+			<div class="span12" style="height:45px"></div>
 		</div>
 		<div class="row">
 			<div class="span12 footer">
-				<div class="navbar navbar-bottom mh40">
+				<div class="navbar navbar-fixed-bottom mh40">
 					<div class="navbar-inner mh40">
 						<div class="container padded centrera">
-							Footer
+							&copy; Zebrafeed Studio
 						</div>
 					</div>
 				</div>
