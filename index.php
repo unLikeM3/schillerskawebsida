@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class="container">
 		<div class="row">
-			<div class="span12 mt45 h400">
+			<div class="span12 mt41 h400">
 				<div id="slider">
 					<script type="text/javascript">
 						$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",{tags: "engine",tagmode: "any", format: "json" },

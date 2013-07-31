@@ -41,8 +41,11 @@ td{
 .h400{
 	height:400px;
 }
-.mt45{
+.mt41{
 	margin-top: 41px;
+}
+.mt45{
+	margin-top: 45px;
 }
 .mb45{
 	margin-bottom: 45px;
@@ -74,4 +77,10 @@ td{
 	-moz-opacity: 1;
 	-webkit-opacity: 1;
 	-khtml-opacity: 1;
+}
+.span4{
+	vertical-align: text-top;
+}
+.span8{
+	vertical-align: text-top;
 }
