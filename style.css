@@ -21,6 +21,9 @@ body{
 	background-size: cover;
 
 }
+td{
+	padding:2px;
+}
 .centrera{
 	text-align: center;
 }
