@@ -42,7 +42,7 @@ td{
 	height:400px;
 }
 .mt45{
-	margin-top: 45px;
+	margin-top: 41px;
 }
 .mb45{
 	margin-bottom: 45px;
@@ -50,15 +50,28 @@ td{
 .logga{
 	margin-top: -4px;
 }
-.postcontainer{
+.postcontainer > div{
 	border-radius: 5px;
 	background-color: #eee;
 	margin-bottom: 10px;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	-webkit-opacity: 0.9;
+	-khtml-opacity: 0.9;
 }
 .sidebar{
 	border-radius: 5px;
 	background-color: #eee;
+	-moz-opacity: 0.9;
+	-webkit-opacity: 0.9;
+	-khtml-opacity: 0.9;
 }
 .footer{
 	margin-top: 10px;
+}
+.noop{
+	opacity: 1;
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	-khtml-opacity: 1;
 }

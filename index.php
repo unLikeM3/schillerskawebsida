@@ -22,10 +22,12 @@
 		<div class="row">
 			<div class="span8">
 			<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-				<div class="postcontainer padded">
-					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-					<p><?php the_content(__('more...')); ?></p>
-					<p>Skrivet av: <?php the_author(); ?> - <?php the_time('F jS, Y'); ?></p>
+				<div class="postcontainer">
+					<div class="padded">
+						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+						<p><?php the_content(__('more...')); ?></p>
+						<p>Skrivet av: <?php the_author(); ?> - <?php the_time('F jS, Y'); ?></p>
+					</div>
 				</div>
 			<?php endwhile; else : ?>
 				<p><?php _e('Det finns inga artiklar skrivna!'); ?></p><?php endif; ?>
