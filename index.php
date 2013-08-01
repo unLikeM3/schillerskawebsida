@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="span12 mt41 h400">
 				<div id="slider">
-					<script type="text/javascript">
+					<!--<script type="text/javascript">
 						$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",{tags: "engine",tagmode: "any", format: "json" },
 						function(data) {
 							$.each(data.items, function(i,item){
@@ -14,8 +14,9 @@
 							        return false;
 							    }
 							});
-						});
-					</script>
+						});*/
+					</script>-->
+					<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '40' ); ?>
 				</div>
 			</div>
 		</div>

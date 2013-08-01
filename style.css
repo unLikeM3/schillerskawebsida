@@ -14,7 +14,7 @@ General comments (optional).
 */
 
 body{
-	background: url('img/bg2.jpg') no-repeat center center fixed;
+	background: url('img/bg3.jpg') no-repeat center center fixed;
 	-webkit-backround-size:cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -83,4 +83,7 @@ td{
 }
 .span8{
 	vertical-align: text-top;
+}
+#slider{
+	overflow: hidden;
 }
