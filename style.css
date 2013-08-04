@@ -24,6 +24,13 @@ body{
 td{
 	padding:2px;
 }
+th{
+	padding:2px;
+	font-weight: bold;
+}
+.bb1{
+	border-bottom: 1px black solid;
+}
 .centrera{
 	text-align: center;
 }

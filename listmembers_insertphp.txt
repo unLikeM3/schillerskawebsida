@@ -1,0 +1,26 @@
+[insert_php]
+	require 'get_template_directory_uri()/connect.php';
+
+	$sql = mysql_query("SELECT * FROM medlemmar");
+
+	if($sql){
+	echo "<table>
+		<tr>
+			<th>Förnamn</th>
+			<th>Efternamn</th>
+			<th>Personnummer</th>
+			<th>Email</th>
+		</tr>";
+		 while($row = mysql_fetch_assoc($sql)){ 
+			echo "<tr>";
+			echo	"<td>". $row['firstname'] ."</td>";
+			echo	"<td>". $row['lastname'] ."</td>";
+			echo	"<td>". $row['persnr'] ."</td>";
+			echo	"<td>". $row['email'] ."</td>";
+			echo "</tr>";
+		 } 
+	echo "</table>";
+	 }else{
+		echo "MySQL error: " . mysql_error();
+	}
+[/insert_php]
