@@ -21,6 +21,7 @@
 						<li><a href="<?php echo home_url(); ?>">Hem</a></li>
 						<li><a href="<?php echo post_permalink(2); ?>">Bli Medlem</a></li>
 						<li><a href="<?php echo post_permalink(29); ?>">Kontakt</a></li>
+						<li><a href="<?php echo post_permalink(127); ?>">Schema</a></li>
 					</ul>
 				</div>
 			</div>
