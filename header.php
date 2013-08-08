@@ -16,7 +16,8 @@
 		<div class="navbar navbar-inverse navbar-fixed-top mh40">
 			<div class="navbar-inner mh40">
 				<div class="container">
-					<img class="logga brand" src="<?php echo get_template_directory_uri();?>/img/logga2.png">
+					<!--<img class="logga brand" src="<?php echo get_template_directory_uri();?>/img/logga2.png">-->
+					<p class="brand"><a href="<?php echo home_url(); ?>">Schillerskas Elevkår</a></p>
 					<ul class="nav">
 						<li><a href="<?php echo home_url(); ?>">Hem</a></li>
 						<li><a href="<?php echo post_permalink(2); ?>">Bli Medlem</a></li>
