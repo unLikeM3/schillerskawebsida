@@ -28,6 +28,9 @@ th{
 	padding:2px;
 	font-weight: bold;
 }
+.brand a:hover{
+	text-decoration: none;
+}
 .bb1{
 	border-bottom: 1px black solid;
 }
