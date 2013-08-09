@@ -1,0 +1,23 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<div class="container padded">
+	<div class="row">
+		<div class="span12">
+			<ul class="nav nav-tabs">
+				<li class="active" onclick="$('#content').load('[insert_php] echo get_template_directory_uri(); [/insert_php]/verksamhetcontent.php #historia'); $('.active').removeAttr('class'); $(this).attr('class', 'active');"><a href="#">Historia</a></li>
+				
+				<li onclick="$('#content').load('[insert_php] echo get_template_directory_uri(); [/insert_php]/verksamhetcontent.php #organisation'); $('.active').removeAttr('class'); $(this).attr('class', 'active');"><a href="#">Organisation</a></li>
+				
+				<li onclick="$('#content').load('[insert_php] echo get_template_directory_uri(); [/insert_php]/verksamhetcontent.php #styrelsen'); $('.active').removeAttr('class'); $(this).attr('class', 'active');"><a href="#">Styrelsen</a></li>
+				
+				<li onclick="$('#content').load('[insert_php] echo get_template_directory_uri(); [/insert_php]/verksamhetcontent.php #protokoll'); $('.active').removeAttr('class'); $(this).attr('class', 'active');"><a href="#">Protokoll</a></li>
+				
+				<li onclick="$('#content').load('[insert_php] echo get_template_directory_uri(); [/insert_php]/verksamhetcontent.php #stadgar'); $('.active').removeAttr('class'); $(this).attr('class', 'active');"><a href="#">Stadgar</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<div id="content"></div>
+		</div>
+	</div>
+</div>
