@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="span12 mt46 h400">
 				<div id="slider">
-					<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '40' ); ?>
+					<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 				</div>
 			</div>
 		</div>
