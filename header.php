@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jq.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/coin-slider/coin-slider.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/bootstrap.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/functions.js"></script>
 </head>
 <body>
 	<div class="container">
