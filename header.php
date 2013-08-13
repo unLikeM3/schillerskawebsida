@@ -31,15 +31,15 @@
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href="http://schillerskaselevkar.se/?page_id=224">Historia</a></li>
-								<li><a href="http://schillerskaselevkar.se/?page_id=226">Organisation</a></li>
-								<li><a href="http://schillerskaselevkar.se/?page_id=228">Styrelsen</a></li>
-								<li><a href="http://schillerskaselevkar.se/?page_id=230">Protokoll</a></li>
-								<li><a href="http://schillerskaselevkar.se/?page_id=232">Stadgar</a></li>
-								<li><a href="http://schillerskaselevkar.se/?page_id=234">Förmåner</a></li>
+								<li><a href="<?php echo post_permalink(224); ?>">Historia</a></li>
+								<li><a href="<?php echo post_permalink(226); ?>">Organisation</a></li>
+								<li><a href="<?php echo post_permalink(228); ?>">Styrelsen</a></li>
+								<li><a href="<?php echo post_permalink(230); ?>">Protokoll</a></li>
+								<li><a href="<?php echo post_permalink(232); ?>">Stadgar</a></li>
+								<li><a href="<?php echo post_permalink(234); ?>">Förmåner</a></li>
 							</ul>
 						</li>
-						
+						<li><a href=" <?php echo post_permalink(193); ?> ">Galleri</a></li>
 						<li><a href="<?php echo post_permalink(127); ?>">Schema</a></li>
 					</ul>
 				</div>
