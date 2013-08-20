@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="span12 mt46 h400">
 				<div id="slider">
-					<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
+					<?php echo do_shortcode("[metaslider id=260]"); ?>
 				</div>
 			</div>
 		</div>
