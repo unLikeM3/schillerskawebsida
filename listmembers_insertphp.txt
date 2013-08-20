@@ -1,22 +1,25 @@
 [insert_php]
-	require 'get_template_directory_uri()/connect.php';
+	$uri = get_template_directory_uri();
+	require "/connect.php";
 
-	$sql = mysql_query("SELECT * FROM medlemmar");
+	$sql = mysql_query('SELECT * FROM medlemmar');
 
 	if($sql){
 	echo "<table>
-		<tr>
-			<th>Förnamn</th>
-			<th>Efternamn</th>
-			<th>Personnummer</th>
-			<th>Email</th>
+		<tr style='border-bottom:1px solid black;'>
+			<th style='padding: 2px;'>Förnamn</th>
+			<th style='padding: 2px;'>Efternamn</th>
+			<th style='padding: 2px;'>Personnummer</th>
+			<th style='padding: 2px;'>Email</th>
+			<th style='padding: 2px;'>Årskurs</th>
 		</tr>";
 		 while($row = mysql_fetch_assoc($sql)){ 
-			echo "<tr>";
-			echo	"<td>". $row['firstname'] ."</td>";
-			echo	"<td>". $row['lastname'] ."</td>";
-			echo	"<td>". $row['persnr'] ."</td>";
-			echo	"<td>". $row['email'] ."</td>";
+			echo "<tr style='border-bottom:1px solid black;'>";
+			echo	"<td  style='padding: 2px;'>". $row['firstname'] ."</td>";
+			echo	"<td  style='padding: 2px;'>". $row['lastname'] ."</td>";
+			echo	"<td  style='padding: 2px;'>". $row['persnr'] ."</td>";
+			echo	"<td  style='padding: 2px;'>". $row['email'] ."</td>";
+			echo	"<td  style='padding: 2px;'>". $row['arskurs'] ."</td>";
 			echo "</tr>";
 		 } 
 	echo "</table>";
