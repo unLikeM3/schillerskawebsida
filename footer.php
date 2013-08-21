@@ -3,7 +3,7 @@
 				<div class="navbar navbar-fixed-bottom mh40">
 					<div class="navbar-inner mh40">
 						<div class="container padded centrera">
-							&copy; Zebrafeed Studio 2013
+							&copy; Zebrafeed Studio & Schillerskas Elevkår 2013
 						</div>
 					</div>
 				</div>
