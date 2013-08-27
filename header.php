@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/functions.js"></script>
 </head>
 <body>
+<div id="wrapper">
 	<div class="container">
 		<div class="navbar navbar-inverse navbar-fixed-top mh40">
 			<div class="navbar-inner mh40">

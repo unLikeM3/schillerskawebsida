@@ -10,24 +10,31 @@
 	$telnr = $_POST['telnr'];
 
 	$sql = "INSERT INTO medlemmar VALUES ('$fname', '$lname', '$pnr', '$email', '$arskurs', '$telnr')";
+	$sql2= "SELECT * FROM medlemmar";
+
+	$checkpnr = mysql_num_rows(mysql_query($sql2));
 
 	if($fname != null && $lname != null){
 		if (is_numeric($pnr)) {
-			if(is_numeric($telnr)){
-				if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-					if (mysql_query($sql)) {
-						echo "Du är nu medlem! <br> Klicka <a href='../../../'>här</a> för att gå vidare!";
+			if($checkpnr == 0){
+				if(is_numeric($telnr)){
+					if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+						if (mysql_query($sql)) {
+							echo "Du är nu medlem! <br> Klicka <a href='../../../'>här</a> för att gå vidare!";
+						}else{
+							die("Final: " . mysql_error());
+						}
 					}else{
-						die("Final: " . mysql_error());
+						die('Du måste fylla i din email!');
 					}
 				}else{
-					die('Du måste fylla i din email!');
+					die("Felaktigt telefonnr");
 				}
 			}else{
-				die("Felaktigt telefonnr");
+				die("Du är redan inskriven!");
 			}
-			}else {
-				die('Personnummer måste vara i YYYYMMDDXXXX-format!');
+		}else {
+			die('Personnummer måste vara i YYYYMMDDXXXX-format!');
 		}
 	}else{
 		die('Du måste fylla i förnamn/efternamn!');
