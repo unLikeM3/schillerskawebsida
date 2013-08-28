@@ -2,12 +2,16 @@
 <?php 
 	require 'connect.php';
 
-	$fname = $_POST['fornamn'];
-	$lname = $_POST['efternamn'];
-	$pnr = $_POST['persnr'];
-	$email = $_POST['email'];
-	$arskurs = $_POST['arskurs'];
-	$telnr = $_POST['telnr'];
+	$fname = 	mysql_real_escape_string($_POST['fornamn']);
+	$lname = 	mysql_real_escape_string($_POST['efternamn']);
+	$pnr = 		mysql_real_escape_string($_POST['persnr']);
+	$email = 	mysql_real_escape_string($_POST['email']);
+	$arskurs = 	mysql_real_escape_string($_POST['arskurs']);
+	$telnr = 	mysql_real_escape_string($_POST['telnr']);
+
+
+
+
 
 	$sql = "INSERT INTO medlemmar VALUES ('$fname', '$lname', '$pnr', '$email', '$arskurs', '$telnr')";
 	$sql2= "SELECT * FROM medlemmar";
