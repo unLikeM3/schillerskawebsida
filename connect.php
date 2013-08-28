@@ -5,7 +5,8 @@
 	$db		= '182898-wp';
 
 	$con = mysql_connect($host, $user, $pass);
-
+	mysql_set_charset("UTF8", $con);
+	
 	if (!$con) {
 		die("Cannot connect to database");
 	}else{
