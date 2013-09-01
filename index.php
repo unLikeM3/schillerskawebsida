@@ -14,7 +14,7 @@
 						<div class="padded">
 							<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 							<p><?php the_content(__('more...')); ?></p>
-							<p>Skrivet av: <?php the_author(); ?> - <?php the_time('F jS, Y'); ?></p>
+							<p>Skrivet av: <?php the_author(); ?> - <?php the_time('M jS, Y'); ?></p>
 						</div>
 					</div>
 				<?php endwhile; else : ?>
