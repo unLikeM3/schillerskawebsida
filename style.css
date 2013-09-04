@@ -19,10 +19,7 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-width: 1220px;
-}
-#wrapper{
-	min-width: 1220px;
+
 }
 td{
 	padding:2px;
@@ -53,8 +50,7 @@ th{
 }
 .h400{
 	height:400px;
-	min-height: 400px;
-	max-height: 400px;
+	z-index: 0;
 }
 .mt46{
 	margin-top: 50px;
@@ -100,10 +96,5 @@ th{
 	vertical-align: text-top;
 }
 #slider{
-	min-width: 1220px;
-}
-#acceptTerms{
-	margin: 0 auto;
-	height: 25px;
-	width: 25px;
+	overflow: hidden;
 }

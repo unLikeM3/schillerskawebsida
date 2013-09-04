@@ -1,0 +1,20 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<div class="container padded">
+	<div class="row">
+		<div class="span12">
+			<ul class="nav nav-tabs">
+				<li class="active"><a onclick="$('#content').load('verksamhetcontent.php #historia');" href="#">Historia</a></li>
+				<li><a onclick="$('#content').load('verksamhetcontent.php #organisation');" href="#">Organisation</a></li>
+				<li><a onclick="$('#content').load('verksamhetcontent.php #styrelsen');" href="#">Styrelsen</a></li>
+				<li><a onclick="$('#content').load('verksamhetcontent.php #protokoll');" href="#">Protokoll</a></li>
+				<li><a onclick="$('#content').load('verksamhetcontent.php #stadgar');" href="#">Stadgar</a></li>
+				<li><a onclick="$('#content').load('verksamhetcontent.php');" href="#">All</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<div id="content"></div>
+		</div>
+	</div>
+</div>

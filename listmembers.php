@@ -19,7 +19,6 @@
 				<td border="1px solid black"><?php echo $row['persnr']; ?></td>
 				<td border="1px solid black"><?php echo $row['email']; ?></td>
 				<td border="1px solid black"><?php echo $row['telnr']; ?></td>
-				<td border="1px solid black"><?php echo $row['arskurs']; ?></td>
 			</tr>
 		<?php } ?>
 	</table>
