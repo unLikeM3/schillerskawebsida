@@ -22,7 +22,7 @@
 		$alttelnr = "-";
 	}
 
-
+	mysql_query("SET NAMES 'utf8'");
 	$sql = "INSERT INTO medlemmar VALUES ('$fname', '$lname', '$pnr', '$email', '$arskurs', '$telnr', '$co', '$adress', '$ort', '$alttelnr', '$kon')";
 	$sql2= "SELECT * FROM medlemmar WHERE persnr='$pnr'";
 
