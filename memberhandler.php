@@ -35,10 +35,14 @@
 					if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 						if ($adress != null) {
 							if ($ort != null) {
-								if (mysql_query($sql)) {
-									echo "Du är nu medlem!";
+								if ($kon != "man" || $kon != "kvinna") {
+									if (mysql_query($sql)) {
+										echo "Du är nu medlem!";
+									}else{
+										die("Final: " . mysql_error());
+									}
 								}else{
-									die("Final: " . mysql_error());
+									echo "Du måste välja kön!";
 								}
 							}else{
 								echo "Du måste fylla i ort!";
