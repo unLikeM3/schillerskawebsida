@@ -14,15 +14,15 @@ General comments (optional).
 */
 
 body{
-	background: url('img/bg3.jpg') no-repeat center center fixed;
+	background: url('img/background.png') no-repeat center center fixed;
 	-webkit-backround-size:cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-width: 1220px;
+	/*min-width: 1220px;*/
 }
 #wrapper{
-	min-width: 1220px;
+	/*min-width: 1220px;*/
 }
 td{
 	padding:2px;
@@ -40,8 +40,12 @@ th{
 .centrera{
 	text-align: center;
 }
+.center{
+	margin:0 auto;
+}
 .padded{
 	padding: 5px;
+	border-radius: 5px;
 }
 .bright{
 	background-color: #aaa;
@@ -70,19 +74,29 @@ th{
 }
 .postcontainer > div{
 	border-radius: 5px;
+	border:1px solid #000;
 	background-color: #eee;
 	margin-bottom: 10px;
-	opacity: 0.9;
-	-moz-opacity: 0.9;
-	-webkit-opacity: 0.9;
-	-khtml-opacity: 0.9;
+	/* For IE 5.5 - 7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6EEEEEE, endColorstr=#E6EEEEEE);
+	/* For IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6EEEEEE, endColorstr=#E6EEEEEE)";
+	/* 50% opacity */
+	background: rgba(238, 238, 238, 0.9);
 }
 .sidebar{
 	border-radius: 5px;
-	background-color: #eee;
-	-moz-opacity: 0.9;
-	-webkit-opacity: 0.9;
-	-khtml-opacity: 0.9;
+	background-color: #fff;
+	/* For IE 5.5 - 7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6EEEEEE, endColorstr=#E6EEEEEE);
+	/* For IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6EEEEEE, endColorstr=#E6EEEEEE)";
+	/* 50% opacity */
+	background: rgba(238, 238, 238, 0.9);
+}
+.rounded-border {
+	border-radius: 5px;
+	border:1px solid #000;
 }
 .footer{
 	margin-top: 10px;
@@ -101,4 +115,22 @@ th{
 }
 #slider{
 	min-width: 1220px;
+}
+#acceptTerms{
+	margin: 0 auto;
+	height: 25px;
+	width: 25px;
+}
+h1, h2, h3, h4{
+	color:#0088cc;
+}
+
+.kontaktkort{
+	text-align: left;
+}
+
+.kontaktkort img{
+	width:200px;
+	height:auto;
+	border-radius: 5px;
 }
