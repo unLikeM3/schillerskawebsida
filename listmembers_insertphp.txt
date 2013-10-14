@@ -12,6 +12,10 @@
 			<th style='padding: 2px;'>Personnummer</th>
 			<th style='padding: 2px;'>Email</th>
 			<th style='padding: 2px;'>Årskurs</th>
+			<th style='padding: 2px;'>Adress</th>
+			<th style='padding: 2px;'>Ort</th>
+			<th style='padding: 2px;'>C/o</th>
+			<th style='padding: 2px;'>Alt. Telefonnr</th>
 		</tr>";
 		 while($row = mysql_fetch_assoc($sql)){ 
 			echo "<tr style='border-bottom:1px solid black;'>";
